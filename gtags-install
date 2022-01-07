@@ -10,6 +10,7 @@ eg: wget https://ftp.gnu.org/pub/gnu/global/global-6.6.8.tar.gz
 4 unpack and install the gtags
 ./configure
 or If you are not going to use gtags-cscope, please try ./configure --disable-gtagscscope
+sudo apt-get install libncurses5-dev
 make
 sudo make install
 
