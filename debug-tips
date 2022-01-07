@@ -1,0 +1,11 @@
+1: how to debug which plugin cause the VIM pretty slow
+
+You can use built-in profiling support: after launching vim do
+:profile start profile.log
+:profile func *
+:profile file *
+" At this point do slow actions
+:profile pause
+:noautocmd qall!
+
+then the profile.log will generated under the opened file folder, to find out which plugin call count/total time .
